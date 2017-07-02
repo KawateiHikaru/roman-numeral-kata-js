@@ -1,0 +1,15 @@
+{
+  "name": "RomanNumeral",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+  	"test": "mocha",
+    "test:watch": "./node_modules/.bin/mocha --watch ./test ./js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "coverage": "^0.0.0",
+    "mocha": "^3.4.2"
+  }
+}
