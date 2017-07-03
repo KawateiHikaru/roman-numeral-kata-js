@@ -57,9 +57,10 @@ describe("Roman Numeral Converter", function() {
 		expect(c(999)).to.equal('CMXCIX');
 	});
 
-	it("should convert 4 digits", function(){
+	it("should convert four digits", function(){
 		expect(c(1000)).to.equal('M');
 		expect(c(1100)).to.equal('MC');
+		expect(c(1111)).to.equal('MCXI');
 		expect(c(1400)).to.equal('MCD');
 		expect(c(1500)).to.equal('MD');
 		expect(c(1600)).to.equal('MDC');
@@ -70,4 +71,11 @@ describe("Roman Numeral Converter", function() {
 	it("should convert 1642 ", function(){
 		expect(c(1642)).to.equal('MDCXLII');
 	});
+
+	// it("should print from 1 to 3999", function(){
+	// 	for (var i=1;i < 4000; i++) {
+	// 		console.log(i, c(i));
+	// 	}
+	// 	expect(true).to.be.true;
+	// })
 });
